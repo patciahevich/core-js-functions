@@ -33,7 +33,10 @@ function getCurrentFunctionName() {
  *
  */
 function getFunctionBody(func) {
-  return func.toString();
+  if (func) {
+    return func.toString();
+  }
+  return '';
 }
 
 /**
